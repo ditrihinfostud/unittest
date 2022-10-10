@@ -8,6 +8,9 @@ use App\Entity\Author;
 
 class MovieTest extends TestCase
 {
+    //https://github.com/FriendsOfPHP/PHP-CS-Fixer/issues/3302
+    //https://stackoverflow.com/questions/27720066/phpunit-test-classes-with-camel-case-or-underscore
+    //https://laracasts.com/discuss/channels/code-review/snake-case-or-camelcase
     public function testMovieHasAName()
     {
         $movie = new Movie();
