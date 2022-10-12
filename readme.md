@@ -15,7 +15,8 @@
 - php bin/console make:migration
 - php bin/console doctrine:migrations:migrate
 
-# MoviesTest.php (test example)
+# Test example
+-MoviesTest.php
 
 # Running tests
 - ./vendor/bin/phpunit tests
