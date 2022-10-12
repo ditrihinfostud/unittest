@@ -4,10 +4,7 @@
 - composer require symfony/maker-bundle --dev
 - composer require orm
 
-# Running tests
-- ./vendor/bin/phpunit tests
-
-# SETUP
+# Setup entities
 - php bin/console make:entity
 - (Movie, name, ManyToMany -> Author)
 - (Author, name, ManyToMany -> Movie)
@@ -18,7 +15,10 @@
 - php bin/console make:migration
 - php bin/console doctrine:migrations:migrate
 
-# MoviesTest.php (example)
+# MoviesTest.php (test example)
+
+# Running tests
+- ./vendor/bin/phpunit tests
 
 # PhpUnit Documentation
 - https://phpunit.readthedocs.io/en/9.5/assertions.html
