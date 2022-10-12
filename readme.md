@@ -9,14 +9,14 @@
 - (Movie, name, ManyToMany -> Author)
 - (Author, name, ManyToMany -> Movie)
 
-# setup .env file and run migrations
+# Setup .env file and run migrations
 
 - php bin/console doctrine:database:create
 - php bin/console make:migration
 - php bin/console doctrine:migrations:migrate
 
 # Test example
--MoviesTest.php
+- MoviesTest.php
 
 # Running tests
 - ./vendor/bin/phpunit tests
